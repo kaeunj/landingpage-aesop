@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aesop Fragrance Collection — 감각적으로 경험하는 향수 컬렉션">
+  <meta name="referrer" content="no-referrer">
+  <title>Aesop | Fragrance Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <a href="#" class="header__logo" aria-label="Aesop 홈">
+      <img src="assets/logo.png" alt="Aesop" width="360" height="96">
+    </a>
+    <nav class="header__nav" aria-label="주요 메뉴">
+      <a href="#collection">Collection</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#notes">Notes</a>
+      <a href="#space">Space</a>
+      <a href="#discovery">Discovery</a>
+    </nav>
+    <button class="header__menu-btn" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img
+          src="assets/mainvisual.png"
+          alt="향수 병과 자연광이 어우러진 정물"
+          width="1920"
+          height="1280"
+          fetchpriority="high"
+          decoding="async"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow">Fragrance Collection 2026</p>
+        <h1 id="hero-title" class="hero__title">감각이 머무는<br>향의 여정</h1>
+        <p class="hero__desc">식물에서 영감을 받은 노트들이 조용히 겹쳐지며,<br>일상 속 작은 의식이 됩니다.</p>
+        <a href="#collection" class="hero__cta">컬렉션 탐색</a>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="intro" id="intro">
+      <div class="container">
+        <p class="intro__text reveal">
+          Aesop의 프래그런스는 단순한 향이 아닌, 공간과 시간에 스며드는 경험입니다.
+          각 보틀은 원료의 기원, 제조의 손길, 그리고 착용하는 순간의 감각을 담고 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="collection" aria-labelledby="collection-title">
+      <div class="container">
+        <header class="section-header reveal" id="collection">
+          <span class="section-header__label">The Collection</span>
+          <h2 id="collection-title" class="section-header__title">향이 전하는 이야기</h2>
+        </header>
+
+        <div class="collection-slider" data-collection-slider>
+          <button type="button" class="collection-slider__btn collection-slider__btn--prev" aria-label="이전 향수">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M14 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="collection-slider__viewport">
+            <div class="collection-slider__track">
+          <article class="product-card" data-product="marrakech">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume1.jpg"
+                alt="Marrakech Intense — 따뜻한 우디 노트"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">01</span>
+              <h3 class="product-card__name">Marrakech Intense</h3>
+              <p class="product-card__notes">클라리 세이지 · 시더 · 샌달우드</p>
+              <p class="product-card__desc">따뜻한 햇살 아래 건조된 나무와 스파이스가 겹쳐지는, 깊고 관능적인 우디 향.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="tacit">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume2.jpg"
+                alt="Tacit — 시트러스와 허브의 청량함"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">02</span>
+              <h3 class="product-card__name">Tacit</h3>
+              <p class="product-card__notes">유자 · 바질 · 베티버</p>
+              <p class="product-card__desc">아침 공기처럼 맑은 시트러스와 허브가 조용히 퍼지는, 절제된 프레시 향.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="hwyl">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume3.jpg"
+                alt="Hwyl — 스모키한 우디 앰버"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">03</span>
+              <h3 class="product-card__name">Hwyl</h3>
+              <p class="product-card__notes">프랑킨센스 · 시프러스 · 베티버</p>
+              <p class="product-card__desc">숲의 안개와 연기가 스며든 듯한, 스모키하고 명상적인 우디 앰버.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="eremia">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume4.jpg"
+                alt="Eremia — 그린 플로럴과 미네랄"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">04</span>
+              <h3 class="product-card__name">Eremia</h3>
+              <p class="product-card__notes">갈바넘 · 시클라멘 · 그린 노트</p>
+              <p class="product-card__desc">비 온 뒤의 잎사귀와 미네랄이 만나는, 투명하고 서늘한 그린 플로럴.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="eidesis">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume5.jpg"
+                alt="Eidesis — 레진과 우디 노트"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">05</span>
+              <h3 class="product-card__name">Eidesis</h3>
+              <p class="product-card__notes">인센스 · 미르 · 우디</p>
+              <p class="product-card__desc">깊은 레진과 스파이스가 겹쳐지는, 명상적이고 관조적인 향.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="steorra">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume6.jpg"
+                alt="Above Us, Steorra — 우디 플로럴"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">06</span>
+              <h3 class="product-card__name">Above Us, Steorra</h3>
+              <p class="product-card__notes">우디 · 플로럴 · 스파이스</p>
+              <p class="product-card__desc">밤하늘 아래 피어나는, 고요하고 깊은 우디 플로럴.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="aurner">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume7.jpg"
+                alt="Aurner — 플로럴 우디"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">07</span>
+              <h3 class="product-card__name">Aurner</h3>
+              <p class="product-card__notes">플로럴 · 우디 · 스파이스</p>
+              <p class="product-card__desc">빛이 스며드는 듯한, 따뜻하고 섬세한 플로럴 우디.</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="ouranon">
+            <div class="product-card__visual">
+              <img
+                src="assets/perfume8.jpg"
+                alt="Ouranon — 스모키 앰버"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__number">08</span>
+              <h3 class="product-card__name">Ouranon</h3>
+              <p class="product-card__notes">베티버 · 인센스 · 미르</p>
+              <p class="product-card__desc">신비로운 깊이가 머무는, 스모키하고 잔잔한 앰버 향.</p>
+            </div>
+          </article>
+            </div>
+          </div>
+
+          <button type="button" class="collection-slider__btn collection-slider__btn--next" aria-label="다음 향수">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M10 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy" aria-labelledby="philosophy-title">
+      <div class="philosophy__bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          width="1600"
+          height="900"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        >
+      </div>
+      <div class="container philosophy__content reveal" id="philosophy">
+        <span class="section-header__label">Philosophy</span>
+        <h2 id="philosophy-title" class="philosophy__title">향은 기억의<br>가장 조용한 형태</h2>
+        <p class="philosophy__text">
+          우리는 화려함보다 본질을 선택합니다. 원료의 출처, 지속 가능한 채취,<br>
+          그리고 최소한의 포장 — 모든 결정은 감각의 순수함을 지키기 위함입니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="notes" id="notes" aria-labelledby="notes-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-header__label">Olfactory Notes</span>
+          <h2 id="notes-title" class="section-header__title">층위로 읽는 향</h2>
+        </header>
+        <div class="notes__grid">
+          <div class="notes__card reveal">
+            <span class="notes__layer">Top</span>
+            <h3>시트러스 &amp; 허브</h3>
+            <p>처음 맡는 순간, 공기를 가르는 밝고 투명한 첫인상.</p>
+          </div>
+          <div class="notes__card reveal" style="--reveal-delay: 0.1s">
+            <span class="notes__layer">Heart</span>
+            <h3>플로럴 &amp; 스파이스</h3>
+            <p>체온과 만나며 피어나는, 따뜻하고 복합적인 중심.</p>
+          </div>
+          <div class="notes__card reveal" style="--reveal-delay: 0.2s">
+            <span class="notes__layer">Base</span>
+            <h3>우디 &amp; 레진</h3>
+            <p>시간이 지나도 피부에 남는, 깊고 잔잔한 여운.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space" aria-labelledby="space-title">
+      <div class="container">
+        <header class="section-header reveal" id="space">
+          <span class="section-header__label">Space Experience</span>
+          <h2 id="space-title" class="section-header__title">서울, 네 곳의 공간</h2>
+          <p class="space__intro reveal">향은 공간과 맞닿을 때 더 선명해집니다. <br> 서울의 네 매장에서 제품을 직접 경험해 보세요.</p>
+        </header>
+        <div class="space__grid">
+          <a
+            class="space-card reveal"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Aesop+Garosu-gil+45+Gangnam-gu+Seoul"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="space-card__visual">
+              <img src="assets/garosu.jpg" alt="Aesop 가로수길 매장" width="600" height="750" loading="lazy" decoding="async">
+              <div class="space-card__overlay">
+                <p class="space-card__address">서울 강남구 가로수길 45</p>
+                <span class="space-card__btn">View Map</span>
+              </div>
+            </div>
+            <h3 class="space-card__name">Aesop 가로수길</h3>
+          </a>
+
+          <a
+            class="space-card reveal"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Aesop+Sounds+Hannam+Seoul"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="--reveal-delay: 0.08s"
+          >
+            <div class="space-card__visual">
+              <img src="assets/hannam.jpg" alt="Aesop Sounds 한남 매장" width="600" height="750" loading="lazy" decoding="async">
+              <div class="space-card__overlay">
+                <p class="space-card__address">서울 용산구 한남대로20길 39-3</p>
+                <span class="space-card__btn">View Map</span>
+              </div>
+            </div>
+            <h3 class="space-card__name">Aesop Sounds 한남</h3>
+          </a>
+
+          <a
+            class="space-card reveal"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Aesop+Seongsu+Seoul"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="--reveal-delay: 0.16s"
+          >
+            <div class="space-card__visual">
+              <img src="assets/sungsu.jpg" alt="Aesop 성수 매장" width="600" height="750" loading="lazy" decoding="async">
+              <div class="space-card__overlay">
+                <p class="space-card__address">서울 성동구 연무장17길 48</p>
+                <span class="space-card__btn">View Map</span>
+              </div>
+            </div>
+            <h3 class="space-card__name">Aesop 성수</h3>
+          </a>
+
+          <a
+            class="space-card reveal"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Aesop+Samcheong+Seoul"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="--reveal-delay: 0.24s"
+          >
+            <div class="space-card__visual">
+              <img src="assets/samcheong.jpg" alt="Aesop 삼청 매장" width="600" height="750" loading="lazy" decoding="async">
+              <div class="space-card__overlay">
+                <p class="space-card__address">서울 종로구 삼청로 80</p>
+                <span class="space-card__btn">View Map</span>
+              </div>
+            </div>
+            <h3 class="space-card__name">Aesop 삼청</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="discovery" id="discovery" aria-labelledby="discovery-title">
+      <div class="container discovery__inner reveal">
+        <div class="discovery__copy">
+          <span class="section-header__label">Discovery Set</span>
+          <h2 id="discovery-title" class="discovery__title">컬렉션을<br>직접 경험하세요</h2>
+          <p class="discovery__desc">
+            디스커버리 세트 신청 시, 네 가지 향의 미니어처를 경험할 수 있습니다.
+            아래 정보를 남겨 주시면 안내 드리겠습니다.
+          </p>
+        </div>
+        <form class="discovery-form" novalidate>
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">핸드폰 번호</label>
+            <input type="tel" id="phone" name="phone" placeholder="핸드폰 번호" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="이메일" required autocomplete="email">
+          </div>
+          <label class="form-consent" for="privacy">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <span>개인정보 수집 및 이용에 동의합니다. <em>(필수)</em></span>
+          </label>
+          <button type="submit" class="discovery-form__submit">신청하기</button>
+          <p class="discovery-form__message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img class="footer__logo" src="assets/logo.png" alt="Aesop" width="360" height="96">
+      <p class="footer__copy">© 2026 Aesop Fragrance Collection. Brand campaign landing page.</p>
+      <nav class="footer__links" aria-label="푸터 링크">
+        <a href="#collection">Collection</a>
+        <a href="#discovery">Discovery</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button type="button" class="top-btn" aria-label="맨 위로 이동" title="맨 위로">
+    <svg class="top-btn__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path d="M12 6v12M12 6l-5 5M12 6l5 5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script type="module" src="js/config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
