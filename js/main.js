@@ -1,7 +1,4 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
-import { supabaseUrl, supabaseKey } from './config.js';
-
-const supabase = createClient(supabaseUrl, supabaseKey);
+document.documentElement.classList.add('js-ready');
 
 const header = document.querySelector('.header');
 const menuBtn = document.querySelector('.header__menu-btn');
@@ -10,6 +7,27 @@ const form = document.querySelector('.discovery-form');
 const formMessage = document.querySelector('.discovery-form__message');
 const hero = document.querySelector('.hero');
 const topBtn = document.querySelector('.top-btn');
+
+let supabaseClient = null;
+
+async function getSupabase() {
+  if (supabaseClient) return supabaseClient;
+
+  try {
+    const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm');
+    const { supabaseUrl, supabaseKey } = await import('./config.js');
+
+    if (!supabaseUrl || !supabaseKey || supabaseUrl.includes('YOUR_')) {
+      return null;
+    }
+
+    supabaseClient = createClient(supabaseUrl, supabaseKey);
+    return supabaseClient;
+  } catch (err) {
+    console.warn('Supabase config not loaded:', err);
+    return null;
+  }
+}
 
 /* Header scroll background & top button visibility */
 window.addEventListener('scroll', () => {
@@ -190,6 +208,13 @@ form?.addEventListener('submit', async (e) => {
   if (!form.privacy?.checked) {
     showMessage('개인정보 수집 및 이용에 동의해 주세요.', 'error');
     form.privacy?.focus();
+    return;
+  }
+
+  const supabase = await getSupabase();
+
+  if (!supabase) {
+    showMessage('서버 설정이 완료되지 않았습니다. 관리자에게 문의해 주세요.', 'error');
     return;
   }
 

@@ -34,8 +34,12 @@ npx serve .
 
 1. [Vercel](https://vercel.com)에 저장소 연결
 2. Framework Preset: **Other** (정적 사이트)
-3. Output Directory: `.` (루트)
-4. Deploy
+3. **Environment Variables** 추가 (필수 — 폼 제출용):
+   - `SUPABASE_URL` — Supabase 프로젝트 URL
+   - `SUPABASE_ANON_KEY` — Supabase anon key
+4. Deploy (`npm run build`가 `js/config.js`를 자동 생성)
+
+배포 후 텍스트가 안 보이면: Vercel에 환경 변수가 없어도 페이지는 표시됩니다. 폼만 동작하지 않을 수 있습니다.
 
 ## 프로젝트 구조
 
