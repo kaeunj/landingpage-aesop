@@ -2,6 +2,6 @@
   "name": "landingpage-aesop",
   "private": true,
   "scripts": {
-    "build": "node scripts/generate-config.js"
+    "build": "node scripts/generate-config.cjs"
   }
 }
